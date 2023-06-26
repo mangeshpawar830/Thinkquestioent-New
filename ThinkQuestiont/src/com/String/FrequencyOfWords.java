@@ -1,4 +1,4 @@
-package String;
+package com.String;
 
 public class FrequencyOfWords {
 	static void frequency(String str) {

@@ -1,6 +1,6 @@
-package String;
+package com.String;
 
-public class DuplicateCharacterStringh {
+public class DuplicateCharacterString {
 	static void duplicate(String str) {
 		char ch[]=str.toCharArray();
 		int count;
@@ -18,7 +18,7 @@ public class DuplicateCharacterStringh {
 	}
 	public static void main(String[] args) {
 		String str="java";
-		DuplicateCharacterStringh.duplicate(str);
+		DuplicateCharacterString.duplicate(str);
 	}
 
 }

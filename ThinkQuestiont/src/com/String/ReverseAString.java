@@ -1,4 +1,4 @@
-package String;
+package com.String;
 
 public class ReverseAString {
 	static void reverse(String str) {

@@ -1,4 +1,4 @@
-package com.Array.VarableArgument;
+package com.Array.VariableArgument;
 
 public class Example1 {
 	public void show(int...a) {
