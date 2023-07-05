@@ -1,0 +1,29 @@
+O.1)create two integer type of set take a one integer value from user as
+ a input and check that value is present in both the set or not and
+ find out the position of that value in both the set
+Q2)create arraylist of student which contain id,name,marks. create a treeset
+result type which contain student id and total score. and display set in descending order.
+
+Hahmap is random there is no order
+Hashmap internal hashtable
+Treemap-intrnally uses redblack tree.
+treemap is sorted
+Hashmap allowed only one null key
+Treemap does not allowed null key
+
+
+Hashset internally uses hashmap
+it internally consider key as a element
+and value consider dummy object
+it does not alllow duplicate elements
+it does not maintain order
+
+Linkedhashset internally uses linkedhashmap
+it maintain the insertion order
+
+Treeset internally uses treemap
+Treeset is sorted
+Treeset does not allowed null key
+
+
+
