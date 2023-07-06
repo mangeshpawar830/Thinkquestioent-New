@@ -8,8 +8,6 @@ import com.DAO.CalculatorImplementation;
 
 public class Man {
 
-	
-
 		@Test
 		public void test() {
 			CalculatorImplementation ci=new CalculatorImplementation();
@@ -38,5 +36,7 @@ public class Man {
 		}
 
 
-	}
+	
 
+
+}

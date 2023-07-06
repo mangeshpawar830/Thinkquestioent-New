@@ -1,6 +1,8 @@
 package com.DAO;
 
+
 public interface CalculatorDetails {
+
 	
 	
 	public int add(int num1,int num2);
