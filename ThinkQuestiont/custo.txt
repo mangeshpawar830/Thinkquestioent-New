@@ -25,5 +25,16 @@ Treeset internally uses treemap
 Treeset is sorted
 Treeset does not allowed null key
 
+//Queue
+//there are two create a queue using priority queue and
+//in queue there are two operation insert-rear, delete-front.
+//First in first out
 
+//Stack
+//last in first out
+/methods are pick,pop,search.
+
+
+create a list is of employee type it contain id,name,salary increase
+ the salary by 10% of thoes employee who salary is less than 20000.
 

@@ -2,6 +2,8 @@ package com.Collection.TreeSet;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 /*Q2)create arraylist of student which contain id,name,marks. create a class result treeset
  type which contain student id and total score. and display set in descending order*/
@@ -36,11 +38,6 @@ class Result{
 	public String toString() {
 		return "Result [id=" + id + ", totalMarks=" + totalMarks + "]";
 	}
-	
-	
-	
-	
-	
 }
 	
 
@@ -67,7 +64,8 @@ public class StudentMain {
 				st.put(stud.id, stud.marks);
 			}
 		}
-		System.out.println(st);
+		TreeSet<Result>tr=new TreeSet<>();
+	
 		
 	}
 	
