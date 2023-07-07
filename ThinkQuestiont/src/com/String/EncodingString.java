@@ -17,7 +17,10 @@ public class EncodingString {
 			}
 		}
 		System.out.println(sb);
+		System.out.println("FB".hashCode());
+		System.out.println("Ea".hashCode());
 		
 	}
+	
 
 }
