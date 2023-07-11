@@ -51,6 +51,26 @@ public class InventoryManager {
 		}
 		System.out.println("Total value: "+totalvalue);
 	}
+	public List<Product>searchByName(String name) {
+		List<Product>matchingProducts=new ArrayList<>();
+		for(Product product:products) {
+			if(product.getName().equalsIgnoreCase(name)) {
+				matchingProducts.add(product);
+			}
+		}
+		return matchingProducts;
+		
+	}
+	
+	public List<Product> searchByCategory(Category category) {
+		List<Product>matchingProducts=new ArrayList<>();
+		for(Product product:products) {
+			if(product.getCategory().equals(category)) {
+				matchingProducts.add(product);
+			}
+		}
+		return matchingProducts;
+	}
 	
 	
 	

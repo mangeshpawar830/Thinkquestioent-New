@@ -1,0 +1,30 @@
+Normalzaton-it is used to remove redendancy(duplicate) and consistancy()
+ from the database.
+
+1NF-1)each cell contains unique value
+	2)each coloumn has unique name
+	3)add data with proper value
+	
+2NF-1)follow the rule of 1NF
+	2)should not have partial dependancy(one key field depend on another key field)
+
+3Nf-1)follow the rule of 2NF
+	2)should not have transitive dependency(one non key field is depend on another non key field)
+	
+Datatypes in sql
+1)Numeric
+2)Text
+3)Date/Time
+	 
+Sql commands
+DDL		DML		DCL(data control)	TCL(transacton control)		DQL	(data query)
+create	insert		grant 					rolleback					select
+alter 	update		revoke					commit
+rename	delete
+drop
+truncate
+
+# is used for comment
+
+create employee table employee has emp_id emp_name salary dep_name locaton gender
+insert 5 record in a table
