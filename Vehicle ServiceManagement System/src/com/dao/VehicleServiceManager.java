@@ -15,6 +15,9 @@ public class VehicleServiceManager {
 	       this.vehicles = new ArrayList<>();
 	       this.serviceRecords = new ArrayList<>();
 	  }
+	   public List<Vehicle> getVehicles() {
+	        return vehicles;
+	    }
 	  
 	   public void addVehicle(Vehicle vehicle) {
 	        vehicles.add(vehicle);
