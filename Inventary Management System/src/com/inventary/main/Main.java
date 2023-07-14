@@ -13,6 +13,7 @@ public class Main {
 		Scanner sc=new Scanner(System.in);
 		char ch;
         do {
+            System.out.println("==== Inventary Management System ====");
         	 System.out.println("Please select an option:");
              System.out.println("1. Add a product");
              System.out.println("2. Remove a product");

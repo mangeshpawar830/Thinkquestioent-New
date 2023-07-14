@@ -20,6 +20,8 @@ public class InventoryManager {
 	
 	public void addProduct(Product product) {
 		products.add(product);
+		
+		inventary.add(new InventoryItem(product,0));
 	}
 	public void removeProduct(Product product) {
 		products.remove(product);
