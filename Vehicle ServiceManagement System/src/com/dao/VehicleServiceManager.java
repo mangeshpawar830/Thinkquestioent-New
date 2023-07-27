@@ -50,32 +50,30 @@ public class VehicleServiceManager {
 	            }
 	        }
 	    }
-	    public void searchByModel(String model) {
-	        for (Vehicle vehicle : vehicles) {
-	            if (vehicle.getModel().equalsIgnoreCase(model)) {
-	                System.out.println("ID: " + vehicle.getId());
-	                System.out.println("Make: " + vehicle.getMake());
-	                System.out.println("Model: " + vehicle.getModel());
-	                System.out.println("Type: " + vehicle.getType());
-	                System.out.println("Year: " + vehicle.getYear());
-	                System.out.println("Mileage: " + vehicle.getMileage());
-	                System.out.println("---------------------------");
-	            }
-	        }
-	    }
-	    public void searchByType(VehicleType type) {
-	        for (Vehicle vehicle : vehicles) {
-	            if (vehicle.getType() == type) {
-	                System.out.println("ID: " + vehicle.getId());
-	                System.out.println("Make: " + vehicle.getMake());
-	                System.out.println("Model: " + vehicle.getModel());
-	                System.out.println("Type: " + vehicle.getType());
-	                System.out.println("Year: " + vehicle.getYear());
-	                System.out.println("Mileage: " + vehicle.getMileage());
-	                System.out.println("---------------------------");
-	            }
-	        }
-	    }
+		
+		  public void searchByModel(String model) { 
+			  for (Vehicle vehicle : vehicles) {
+		  if (vehicle.getModel().equalsIgnoreCase(model)) { 
+			  System.out.println("ID: " +
+		  vehicle.getId()); 
+			  System.out.println("Make: " + vehicle.getMake());
+		  System.out.println("Model: " + vehicle.getModel());
+		  System.out.println("Type: " + vehicle.getType());
+		  System.out.println("Year: "
+		  + vehicle.getYear());
+		  System.out.println("Mileage: " + vehicle.getMileage());
+		  System.out.println("---------------------------"); } } }
+		 
+
+		
+		  public void searchByType(VehicleType type) { for (Vehicle vehicle : vehicles)
+		  { if (vehicle.getType() == type) { System.out.println("ID: " +
+		  vehicle.getId()); System.out.println("Make: " + vehicle.getMake());
+		  System.out.println("Model: " + vehicle.getModel());
+		  System.out.println("Type: " + vehicle.getType()); System.out.println("Year: "
+		  + vehicle.getYear()); System.out.println("Mileage: " + vehicle.getMileage());
+		  System.out.println("---------------------------"); } } }
+		 
 	    public void addServiceRecord(ServiceRecord serviceRecord) {
 	        serviceRecords.add(serviceRecord);
 	    }

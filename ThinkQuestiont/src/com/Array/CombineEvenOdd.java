@@ -22,7 +22,8 @@ public class CombineEvenOdd {
 	        int[] evenOddArray = new int[arr.length];
 	        int evenIndex = 0;
 	        int oddIndex = arr.length - 1;
-
+	        CombineEvenOdd cb=new CombineEvenOdd();
+	        cb.evenOdd(arr, evenOddArray, evenIndex, oddIndex);
 	        
 	    }
 }

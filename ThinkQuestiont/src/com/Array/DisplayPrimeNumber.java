@@ -2,14 +2,13 @@ package com.Array;
 
 import java.util.Scanner;
 
-import com.Day5.Oops.A;
 
 public class DisplayPrimeNumber {
 	
 	public void primeNumber(int arr[]) {
 		for(int i=1;i<arr.length;i++) {
 			int count=0;
-			for(int j=2;j<arr.length;j++) {
+			for(int j=2;j<i;j++) {
 				if(arr[i]%j==0)
 					count++;
 			}
@@ -23,7 +22,7 @@ public class DisplayPrimeNumber {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the element in array: ");
-		int arr[]=new int[5];
+		int arr[]=new int[10];
 		for(int i=0;i<arr.length;i++) {
 			arr[i]=sc.nextInt();
 		}
