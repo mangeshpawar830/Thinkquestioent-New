@@ -34,7 +34,7 @@ public class OrderPanel {
 			     System.out.print("Enter the customer id:");
 			        o.setCid(sc.nextInt());
 				 System.out.print("Enter the item id:");
-				 o.setQty(sc.nextInt());
+				o.setItem_id(sc.nextInt());
 				 System.out.print("Enter the Quantity: ");
 				 o.setQty(sc.nextInt());
 				 od.addOrder(o);
