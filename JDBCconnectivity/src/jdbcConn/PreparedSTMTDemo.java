@@ -97,6 +97,7 @@ public class PreparedSTMTDemo {
 		System.out.print("Enter new model name: ");
 		String name=sc.next();
 		try {
+			//prepared statement are precompile because it is fast
 			pr=conn.prepareStatement("update model set model_name=? where model_id=?");
 			pr.setString(1, name);
 			pr.setInt(2, id);

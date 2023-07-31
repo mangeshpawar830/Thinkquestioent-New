@@ -1,18 +1,21 @@
 package LogicalPrograms;
 class Practice {
-	public void methodA() {
-		System.out.println("Practice()");
-	}
-
-}
-class B extends Practice{
-	public void methodB() {
-		System.out.println("B()");
+	public static void aleternateNumber(int arr[],int arr1[]) {
+	 int merge[]=new int[arr.length+arr1.length];
+	 int index=0;
+	
+		
+		
 	}
 	public static void main(String[] args) {
-		Practice a=new B();
-		a.methodA();
+		int arr[]= {1,2,3,4,5,6};
+		int arr1[]= {7,8,9,10};
+		Practice.aleternateNumber(arr,arr1);
 	}
+	
+	
+	
+	
 
 	
 }
