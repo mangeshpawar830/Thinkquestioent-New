@@ -1,5 +1,6 @@
 package com.inventary.dao;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,12 +8,16 @@ import com.inventary.bean.Category;
 import com.inventary.bean.InventoryItem;
 import com.inventary.bean.Product;
 
+import jdbcConn.DBConnect;
+
 public class InventoryManager {
 	List<Product> products;
 	List<Category> categories;
 	List<InventoryItem> inventary;
+	Connection conn;
 
 	public InventoryManager() {
+		conn=DBConnect.getConnect();
 		products = new ArrayList<>();
 		categories = new ArrayList<>();
 		inventary = new ArrayList<>();

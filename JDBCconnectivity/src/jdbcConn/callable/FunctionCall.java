@@ -3,6 +3,7 @@ package jdbcConn.callable;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.Types;
 import java.util.Scanner;
 
@@ -10,11 +11,13 @@ import java.util.Scanner;
 public class FunctionCall {
 	Connection conn;
 	 CallableStatement cst;
+	 
 	 Scanner sc=new Scanner(System.in);
 	
 	
 	public FunctionCall() {
 		conn=DBConnect.getConnect();
+		
 	}
 	public void  countdepartment() {
 		System.out.print("Enter the department id: ");

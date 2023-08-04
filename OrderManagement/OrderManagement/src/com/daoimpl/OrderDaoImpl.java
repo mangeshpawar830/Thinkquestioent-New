@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
 import com.connect.DBConnection;
 import com.dao.OrderDao;
 import com.entity.Order;
@@ -46,7 +45,6 @@ public class OrderDaoImpl implements OrderDao{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 	}
 
 	@Override
@@ -117,14 +115,17 @@ public class OrderDaoImpl implements OrderDao{
 		}
 		return null;
 	}
+	
 
 	@Override
 	public void displayAllOrder() {
+		
 		try {
+		
 			rs=st.executeQuery("select * from orderdetails");
 			System.out.println("--------------------------------");
 			while(rs.next()) {
-			System.out.println(rs.getInt(1)+" "+rs.getInt(2)+" "+rs.getInt(3)+rs.getInt(4));
+			System.out.println(rs.getInt(1)+" "+rs.getInt(2)+" "+rs.getInt(3)+" "+rs.getInt(4));
 			}
 			System.out.println("--------------------------------");
 		} catch (SQLException e) {

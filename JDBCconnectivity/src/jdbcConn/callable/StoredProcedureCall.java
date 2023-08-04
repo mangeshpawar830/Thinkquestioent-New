@@ -38,7 +38,7 @@ public class StoredProcedureCall {
 			if(status) {
 				rs=cst.getResultSet();
 				while(rs.next()) {
-					System.out.println(rs.getString(1)+" "+rs.getString(2)+" "+rs.getInt(3));
+					System.out.println(rs.getString(1)+" "+rs.getString(2)+" "+rs.getFloat(3));
 				}
 				
 			}
