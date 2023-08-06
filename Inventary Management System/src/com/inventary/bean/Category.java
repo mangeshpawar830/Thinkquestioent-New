@@ -7,6 +7,10 @@ public class Category {
 		return id;
 	}
 	
+	public Category() {
+		super();
+	}
+
 	public Category(int id, String name) {
 		super();
 		this.id = id;

@@ -1,5 +1,8 @@
 package com.inventary.main;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.Scanner;
 
@@ -8,6 +11,10 @@ import com.inventary.bean.Product;
 import com.inventary.dao.InventoryManager;
 
 public class Main {
+	static Connection conn;
+	static PreparedStatement pr;
+	static ResultSet rs;
+	
 	public static void main(String[] args) {
 		InventoryManager im=new InventoryManager();
 		Scanner sc=new Scanner(System.in);

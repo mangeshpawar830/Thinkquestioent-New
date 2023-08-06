@@ -1,6 +1,8 @@
 package com.inventary.dao;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,7 @@ public class InventoryManager {
 	List<Category> categories;
 	List<InventoryItem> inventary;
 	Connection conn;
+	PreparedStatement pr;
 
 	public InventoryManager() {
 		conn=DBConnect.getConnect();
@@ -24,10 +27,45 @@ public class InventoryManager {
 	}
 
 	public void addProduct(Product product) {
-		products.add(product);
+		try {
 
-		inventary.add(new InventoryItem(product, 0));
+            pr = conn.prepareStatement("INSERT INTO product (id, name, category_id, price) VALUES (?, ?, ?, ?)");
+            pr.setInt(1, product.getId());
+            pr.setString(2, product.getName());
+            pr.setInt(3, product.getCategory().getId());
+            pr.setDouble(4, product.getPrice());
+
+            int rowsInserted = pr.executeUpdate();
+
+            if (rowsInserted > 0) {
+                products.add(product);
+                
+                pr=conn.prepareStatement("INSERT INTO category (id, name) VALUES (?, ?)");
+                
+                pr.setInt(1, product.getCategory().getId());
+                pr.setString(2, product.getCategory().getName());
+                pr.executeUpdate();
+            	
+                pr = conn.prepareStatement("INSERT INTO inventory_item (product_id) VALUES (?)");
+                pr.setInt(1, product.getId());
+                pr.executeUpdate();
+
+
+                InventoryItem inventoryItem = new InventoryItem(product, 0);
+                inventary.add(inventoryItem);
+
+                System.out.println("Product added successfully.");
+            } else {
+                System.out.println("Failed to add product.");
+            }
+
+            pr.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 	}
+    
+
 
 	public void removeProduct(Product product) {
 		products.remove(product);
@@ -81,7 +119,8 @@ public class InventoryManager {
 	  for(Product product:products) {
 		  if(product.getCategory().equals(category)) {
 	  matchingProducts.add(product); 
-	  } } 
+	  } 
+	  } 
 	  return matchingProducts; }
 	 
 
