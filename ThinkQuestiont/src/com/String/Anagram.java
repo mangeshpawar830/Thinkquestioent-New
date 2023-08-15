@@ -4,12 +4,11 @@ package com.String;
 public class Anagram {
 
 	public static void main(String[] args) {
-		String s="Silent";//keep eilnst
-		String s1="listln";//Anagram string  eilnst
+		String s="Silent";
+		String s1="listln";
 		int flag=0;
 		int count=0,count1=0;
-		//s=eilnst
-		//s1=eilnst
+		
 		
 		String str1=s.toLowerCase();
 		
@@ -57,8 +56,7 @@ public class Anagram {
 		System.out.println(arr1[i]);
 	}
 	
-	//eilnst
-	//illnst
+	
 	
 	for(int i=0;i<arr.length;i++)
 	{
