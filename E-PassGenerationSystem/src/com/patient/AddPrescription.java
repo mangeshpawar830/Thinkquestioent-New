@@ -18,12 +18,10 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import com.connection.DatabaseConnection;
 
-/**
- * Servlet implementation class AddPrescription
- */
+
 @WebServlet("/AddPrescription")
 public class AddPrescription extends HttpServlet {
-	private final String UPLOAD_DIRECTORY = "F:/project-workspace/E-PassGenerationSystem/WebContent/upload/";
+	private final String UPLOAD_DIRECTORY = "C:/Users/Admin/git/ThinkQuestioent/E-PassGenerationSystem/WebContent/";
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

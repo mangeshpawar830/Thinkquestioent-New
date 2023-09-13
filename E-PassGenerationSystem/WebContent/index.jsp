@@ -48,8 +48,7 @@
 		<div class="container d-flex">
 			<div class="contact-info mr-auto">
 				<i class="icofont-envelope"></i> <a href="mailto:mangupawar830@gmail.com">mangupawar830@gmail.com</a>
-				<i class="icofont-phone"></i> +91-8308075163 <i
-					class="icofont-google-map"></i> Maharashtra, India.
+				<i class="icofont-phone"></i> +91-8308075163 <i class="icofont-google-map"></i> Maharashtra, India.
 			</div>
 		</div>
 	</div>
@@ -61,8 +60,6 @@
 			<h2 class="logo mr-auto">
 				<a href="index.jsp">E-Pass System for COVID-19</a>
 			</h2>
-			<!-- Uncomment below if you prefer to use an image logo -->
-			<!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
@@ -83,10 +80,11 @@
 
 	<!-- ======= Hero Section ======= -->
 	<section id="hero" class="d-flex align-items-center">
-		<div class="container">
+		<div class="container">		
 			<h3>
-				<strong><font color="white">Welcome To E-Pass System for COVID-19</font></strong>
+				<strong><font color="orange">Welcome To E-Pass System for COVID-19</font></strong>
 			</h3>
+			
 		</div>
 	</section>
 	<!-- End Hero -->

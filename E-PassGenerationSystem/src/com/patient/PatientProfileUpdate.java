@@ -10,9 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import com.connection.DatabaseConnection;
 
-/**
- * Servlet implementation class PatientProfileUpdate
- */
+
 @WebServlet("/PatientProfileUpdate")
 public class PatientProfileUpdate extends HttpServlet {
 	

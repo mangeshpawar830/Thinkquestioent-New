@@ -42,7 +42,7 @@ public class CheckPatientPassApplication extends HttpServlet {
 
 		try {
 			Tesseract tesseract = new Tesseract();
-			tesseract.setDatapath("F:/project-workspace/E-PassGenerationSystem/WebContent/upload/testdata/");
+			tesseract.setDatapath("C:/Users/Admin/git/ThinkQuestioent/E-PassGenerationSystem/WebContent/upload/testdata");
 			fullText = tesseract.doOCR(new File(patient_prescription_path));
 			System.out.println("Prescription image extracted data.: " + fullText);
 
@@ -82,7 +82,6 @@ public class CheckPatientPassApplication extends HttpServlet {
 		} catch (TesseractException e) {
 			e.printStackTrace();
 		} catch (Exception ex) {
-			// TODO Auto-generated catch block
 			ex.printStackTrace();
 		}
 

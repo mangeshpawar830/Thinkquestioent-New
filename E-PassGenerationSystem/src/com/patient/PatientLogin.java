@@ -16,9 +16,6 @@ import javax.servlet.http.HttpSession;
 
 import com.connection.DatabaseConnection;
 
-/**
- * Servlet implementation class PatientLogin
- */
 @WebServlet("/PatientLogin")
 public class PatientLogin extends HttpServlet {
 	

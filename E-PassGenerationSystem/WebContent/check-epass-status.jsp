@@ -156,10 +156,10 @@
 							<td><%=resultset.getString("e_pass_status")%></td>
 						</tr>
 						<br>
-						<h4>
+						<!-- <h4>
 							<label class="label label-success">Your application
 								Approved.</label>
-						</h4>
+						</h4> -->
 						<%
 							}
 						%>
